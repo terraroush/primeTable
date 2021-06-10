@@ -63,16 +63,40 @@ const Table = () => {
           sortable
         />
       );
-    } else {
+    } else if (col.field === "title") {
       return (
         <Column
           key={col.field}
           field={col.field}
           header={col.header}
           sortable
+          filter
+          filterPlaceholder="Search by title"
         />
       );
-    }
+    } else if (col.field === "readyInMinutes") {
+        return (
+          <Column
+            key={col.field}
+            field={col.field}
+            header={col.header}
+            sortable
+            filter
+            filterPlaceholder="Search by time"
+          />
+        );
+      } else if (col.field === "servings") {
+        return (
+          <Column
+            key={col.field}
+            field={col.field}
+            header={col.header}
+            sortable
+            filter
+            filterPlaceholder="Search by servings"
+          />
+        );
+      } 
   });
 
   return recipes ? (
