@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./index.scss";
 import Table from "./components/Table";
 import reportWebVitals from "./reportWebVitals";
 

@@ -24,7 +24,7 @@ const Table = () => {
   
   const columns = [
     { field: "image", header: "Image", body: { recipeImageTemplate } },
-    { field: "title", header: "title" },
+    { field: "title", header: "Title" },
     { field: "readyInMinutes", header: "Ready In Minutes" },
     { field: "servings", header: "Servings" },
   ];
