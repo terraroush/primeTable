@@ -1,5 +1,6 @@
-import { SideNav, SideNavItem, SideNavLink } from "carbon-components-react";
+import { SideNav, SideNavLink } from "carbon-components-react/lib/components/UIShell";
 import React from "react";
+import "../index.scss";
 
 const Sidenav = () => {
   return (
@@ -7,7 +8,7 @@ const Sidenav = () => {
       <SideNav
         isFixedNav
         expanded={true}
-        isChildOfHeader={false}
+        isChildOfHeader={true}
         aria-label="Side navigation"
       >
         <SideNavLink href="/recipe-table">Random Recipes</SideNavLink>
