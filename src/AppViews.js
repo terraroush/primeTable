@@ -5,24 +5,31 @@ import Flowers from "./pages/flowers/Flowers";
 import Home from "./pages/home/Home";
 import RecipeTable from "./pages/recipeTable/RecipeTable";
 import Sidenav from "./sidenav/Sidenav";
+import { Content } from "carbon-components-react/lib/components/UIShell";
+import "./AppViews.scss";
 
 export const AppViews = () => {
   return (
-    <React.Fragment>
+    <>
       <AppHeader />
       <Sidenav />
-
       <Route exact path="/">
-        <Home />
+        <Content id="main-content" className="content">
+          <Home />
+        </Content>
       </Route>
 
       <Route path="/recipe-table">
-        <RecipeTable />
+        <Content id="main-content" className="content">
+          <RecipeTable />
+        </Content>
       </Route>
 
       <Route path="/flowers">
-        <Flowers />
+        <Content id="main-content" className="content">
+          <Flowers />
+        </Content>
       </Route>
-    </React.Fragment>
+    </>
   );
 };

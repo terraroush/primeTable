@@ -1,4 +1,7 @@
-import { SideNav, SideNavLink } from "carbon-components-react/lib/components/UIShell";
+import {
+  SideNav,
+  SideNavLink,
+} from "carbon-components-react/lib/components/UIShell";
 import React from "react";
 import "../index.scss";
 

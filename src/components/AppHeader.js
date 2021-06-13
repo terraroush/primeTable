@@ -9,7 +9,7 @@ import {
 const AppHeader = () => {
   return (
     <Header aria-label="Terra's App">
-      <HeaderName href="/">Cats, Foods and Flowers</HeaderName>
+      <HeaderName href="/" prefix="Terra's App ::">Cats, Foods and Flowers</HeaderName>
       <HeaderNavigation aria-label="cfaf">
         <HeaderMenuItem href="/">Home</HeaderMenuItem>
       </HeaderNavigation>

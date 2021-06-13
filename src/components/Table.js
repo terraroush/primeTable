@@ -47,7 +47,7 @@ const Table = () => {
 
   const getRecipes = () => {
     return fetch(
-      `https://api.spoonacular.com/recipes/random?apiKey=${APIKey}&number=5`
+      `https://api.spoonacular.com/recipes/random?apiKey=${APIKey}&number=1`
     )
       .then((response) => response.json())
       .then((data) => {
